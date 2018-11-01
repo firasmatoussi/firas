@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="CourseFXML.GerantController">
+   <children>
+      <ImageView fitHeight="604.0" fitWidth="903.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/salle.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="574.0" fitWidth="589.0" layoutX="165.0" layoutY="13.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="gestion" layoutX="58.0" layoutY="268.0" mnemonicParsing="false" opacity="0.9" style="-fx-background-color: black; -fx-background-radius: 5cm;" text="Gestion de cours">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff8c00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="reservation" layoutX="612.0" layoutY="269.0" mnemonicParsing="false" opacity="0.9" prefHeight="63.0" prefWidth="255.0" style="-fx-background-color: black; -fx-background-radius: 5cm;" text="Réservation">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff8c00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="retour" layoutX="755.0" layoutY="37.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: black; -fx-background-radius: 5cm;" text="Retour">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff8c00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label layoutX="379.0" layoutY="28.0" text="Ad Fitness">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="0.007662835249042145" />
+                  <Stop color="#ff9900" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

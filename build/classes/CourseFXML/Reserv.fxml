@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CourseFXML.ReservController">
+   <children>
+      <ImageView fitHeight="608.0" fitWidth="910.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/salle.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="lv1" layoutX="274.0" layoutY="34.0" opacity="0.81" prefHeight="294.0" prefWidth="362.0" style="-fx-background-color: black;" />
+      <JFXButton fx:id="choisir" layoutX="407.0" layoutY="328.0" opacity="0.81" style="-fx-background-radius: 5cm; -fx-background-color: #6b4f12;" text="Choisir" textFill="#ffa006">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tab" layoutX="99.0" layoutY="385.0" prefHeight="200.0" prefWidth="663.0">
+        <columns>
+          <TableColumn fx:id="lib_aff" minWidth="221.0" prefWidth="75.0" text="Libelle" />
+          <TableColumn fx:id="nom_aff" minWidth="221.0" prefWidth="75.0" text="Nom Complet" />
+            <TableColumn fx:id="phone_aff" minWidth="221.0" prefWidth="75.0" text="Téléphone" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="retour_btn" layoutX="752.0" layoutY="34.0" opacity="0.81" style="-fx-background-radius: 5cm; -fx-background-color: #6b4f12;" text="Retour" textFill="#ffa006">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

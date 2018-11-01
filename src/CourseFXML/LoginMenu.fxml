@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #400000;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CourseFXML.LoginMenuController">
+    <stylesheets>
+        <URL value="@loginmenu.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/4INFOB1/Projet%20PI-dev/plus%20+/salle.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D height="600.0" width="1000.0" />
+         </viewport>
+      </ImageView>
+      <Pane layoutX="491.0" layoutY="181.0" opacity="0.83" prefHeight="290.0" prefWidth="295.0" style="-fx-background-color: #ffac1e; -fx-background-radius: 2cm;">
+         <children>
+            <JFXTextField fx:id="user" focusColor="BLACK" layoutX="51.0" layoutY="77.0" prefHeight="24.0" prefWidth="193.0" promptText="Username / email" style="-fx-text-fill: white;" unFocusColor="BLACK" />
+            <JFXPasswordField fx:id="pass" focusColor="BLACK" layoutX="51.0" layoutY="133.0" prefHeight="24.0" prefWidth="193.0" promptText="Password" style="-fx-text-fill: white;" unFocusColor="BLACK" />
+            <Button fx:id="btn_login" layoutX="85.0" layoutY="207.0" mnemonicParsing="false" opacity="0.86" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: #696969; -fx-background-radius: 5cm;" text="Log in" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Italic" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="verif" layoutX="40.0" layoutY="175.0" prefHeight="24.0" prefWidth="235.0" />
+         </children></Pane>
+      <ImageView fx:id="imageview" fitHeight="424.0" fitWidth="509.0" layoutX="29.0" layoutY="114.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="92.0" prefWidth="377.0" text="Welcome to AD-Fitness" textFill="#f8f8f8">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="89.0" text="Anything You Need In Sport, Join Us" textFill="#ffac1e">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets top="800.0" />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>

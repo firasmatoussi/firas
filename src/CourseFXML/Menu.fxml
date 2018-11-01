@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CourseFXML.MenuController">
+   <children>
+      <ImageView fx:id="image_view" fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/4INFOB1/Projet%20PI-dev/plus%20+/salle.jpg" />
+         </image>
+      </ImageView>
+      <Pane opacity="0.81" prefHeight="600.0" prefWidth="325.0" style="-fx-background-color: black;">
+         <children>
+            <JFXTextField fx:id="lib_ajt" layoutX="64.0" layoutY="90.0" prefHeight="31.0" prefWidth="198.0" promptText="Libelle" style="-fx-text-fill: white;" unFocusColor="WHITE">
+               <padding>
+                  <Insets left="25.0" right="25.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="salle_ajt" layoutX="64.0" layoutY="241.0" prefHeight="31.0" prefWidth="198.0" promptText="Salle" style="-fx-text-fill: white;" unFocusColor="WHITE">
+               <padding>
+                  <Insets left="25.0" right="25.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="nom_ajt" layoutX="64.0" layoutY="315.0" prefHeight="31.0" prefWidth="198.0" promptText="Nom du Coach" style="-fx-text-fill: white;" unFocusColor="WHITE">
+               <padding>
+                  <Insets left="25.0" right="25.0" />
+               </padding>
+            </JFXTextField>
+            <JFXButton fx:id="btn_ajt" layoutX="64.0" layoutY="493.0" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #6b4f12; -fx-background-radius: 5cm;" text="Ajouter" textFill="#ffa006">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="reset_ajt" layoutX="178.0" layoutY="493.0" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #6b4f12; -fx-background-radius: 5cm;" text="Reset" textFill="#ffae00">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="24.0" layoutY="27.0" text="Ajouter Un cours" textFill="#ffa006">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="29.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date_ajt" layoutX="64.0" layoutY="402.0" prefHeight="31.0" prefWidth="198.0" />
+            <JFXComboBox fx:id="combo" focusColor="WHITE" layoutX="64.0" layoutY="165.0" prefHeight="31.0" prefWidth="198.0" promptText="Catégories" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <Label fx:id="lab_ajt" layoutX="64.0" layoutY="458.0" prefHeight="25.0" prefWidth="198.0" textFill="#eeebeb" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btn_logout" layoutX="778.0" layoutY="14.0" opacity="0.83" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: #ffae00; -fx-background-radius: 5cm;" text="Retour">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Pane fx:id="pan_supp" layoutX="341.0" layoutY="403.0" opacity="0.81" prefHeight="183.0" prefWidth="548.0" style="-fx-background-color: black;">
+         <children>
+            <JFXTextField fx:id="lib_sup" layoutX="48.0" layoutY="79.0" promptText="Libelle" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXTextField fx:id="salle_sup" layoutX="220.0" layoutY="27.0" promptText="Salle" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXTextField fx:id="nom_sup" layoutX="220.0" layoutY="79.0" promptText="Nom du coach" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXButton fx:id="valider_supp" layoutX="415.0" layoutY="123.0" prefHeight="37.0" prefWidth="95.0" style="-fx-background-color: #6b4f12; -fx-background-radius: 5cm;" text="Valider" textFill="#ffae00">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXButton>
+            <JFXTextField fx:id="id_sup" layoutX="48.0" layoutY="27.0" promptText="ID" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXButton fx:id="valider_modif" layoutX="415.0" layoutY="123.0" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #6b4f12; -fx-background-radius: 5cm;" text="Valider" textFill="#ffae00">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXButton>
+            <DatePicker fx:id="date_sup" layoutX="220.0" layoutY="144.0" prefHeight="25.0" prefWidth="135.0" />
+            <JFXComboBox fx:id="combo_sup" layoutX="48.0" layoutY="144.0" prefHeight="25.0" prefWidth="135.0" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="supprimer" layoutX="507.0" layoutY="357.0" opacity="0.85" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #6b4f12; -fx-background-radius: 5cm;" text="Supprimer" textFill="#ffae00">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="modfifier" layoutX="639.0" layoutY="357.0" opacity="0.85" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #6b4f12; -fx-background-radius: 5cm;" text="Modifier" textFill="#ffae00">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <TableView fx:id="tab_aff" layoutX="325.0" layoutY="64.0" prefHeight="286.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="lib_aff" prefWidth="115.8" text="Libelle" />
+          <TableColumn fx:id="type_aff" prefWidth="115.8" text="Type" />
+            <TableColumn fx:id="salle_aff" prefWidth="115.8" text="Salle" />
+            <TableColumn fx:id="nom_aff" prefWidth="115.8" text="Nom du coach" />
+            <TableColumn fx:id="date_aff" prefWidth="115.8" text="Date" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="pdt_btn" layoutX="769.0" layoutY="357.0" opacity="0.85" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #6b4f12; -fx-background-radius: 5cm;" text="Exporter" textFill="#ffae00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
